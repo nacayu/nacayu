@@ -38,10 +38,11 @@
 
 | Metric | Value |
 |:-------|------:|
-| 📂 Repositories | 18 |
-| ⭐ Total Stars | 205+ |
-| 🔱 Total Forks | 40+ |
-| 📝 Public Gists | - |
+| 📂 Repositories | 1818<!-- end --> |
+| ⭐ Total Stars | 191205+<!-- end --> |
+| 🔱 Total Forks | 3440+<!-- end --> |
+| 👥 Followers | 5454<!-- end --> |
+| 👤 Following | 5858<!-- end --> |
 
 </div>
 
@@ -49,10 +50,10 @@
 
 | Language | Projects |
 |:---------|:---------|
-| 🐍 Python | 12 |
-| ⚡ C++ | 4 |
-| 📜 C | 2 |
-| 🌙 Lua | 1 |
+| 🐍 Python | 712<!-- end --> |
+| ⚡ C++ | 34<!-- end --> |
+| 📜 C | 02<!-- end --> |
+| 🌙 Lua | 01<!-- end --> |
 
 </div>
 
@@ -72,7 +73,7 @@
 
 ```
 ┌──────────────────────────────────────────────────────────────────┐
-│  👆 100+ Stars Earned    📂 18 Public Repositories              │
+│  👆 191100+<!-- end --> Stars Earned    📂 1818<!-- end --> Public Repositories              │
 │  🎯 Focus: Autonomous Driving & Radar Perception               │
 └──────────────────────────────────────────────────────────────────┘
 ```
@@ -87,12 +88,12 @@
 
 | Repository | Stars | Forks | Description |
 |:-----------|:-----:|:-----:|:------------|
-| [awesome-deeplearning-based-radar-perception](https://github.com/nacayu/awesome-deeplearning-based-radar-perception) | ⭐ 84 | 🔱 9 | 雷达多模态检测、分割、跟踪、freespace论文 |
-| [CRFNet_Tensorflow2.4.1](https://github.com/nacayu/CRFNet_Tensorflow2.4.1) | ⭐ 42 | 🔱 5 | TensorFlow2.4.1复现CRFNet |
-| [ARS_408_ROS_Toolkit](https://github.com/nacayu/ARS_408_ROS_Toolkit) | ⭐ 23 | 🔱 10 | ARS 408雷达ROS工具包 |
-| [SAF-FCOS](https://github.com/nacayu/SAF-FCOS) | ⭐ 13 | 🔱 3 | SAF-FCOS官方仓库复现 |
-| [SOAR-OCR](https://github.com/nacayu/SOAR-Shanghaijiankangyun-OCR-Automatic-Recognization-) | ⭐ 3 | 🔱 2 | 上海健康云图片OCR识别 |
-| [ImageSetToRosbag](https://github.com/nacayu/ImageSetToRosbag) | ⭐ 1 | 🔱 0 | 图像集转ROSbag |
+| [awesome-deeplearning-based-radar-perception](https://github.com/nacayu/awesome-deeplearning-based-radar-perception) | ⭐ 8484<!-- end --> | 🔱 99<!-- end --> | 雷达多模态检测、分割、跟踪、freespace论文 |
+| [CRFNet_Tensorflow2.4.1](https://github.com/nacayu/CRFNet_Tensorflow2.4.1) | ⭐ 4242<!-- end --> | 🔱 55<!-- end --> | TensorFlow2.4.1复现CRFNet |
+| [ARS_408_ROS_Toolkit](https://github.com/nacayu/ARS_408_ROS_Toolkit) | ⭐ 2323<!-- end --> | 🔱 1010<!-- end --> | ARS 408雷达ROS工具包 |
+| [SAF-FCOS](https://github.com/nacayu/SAF-FCOS) | ⭐ 1313<!-- end --> | 🔱 33<!-- end --> | SAF-FCOS官方仓库复现 |
+| [SOAR-OCR](https://github.com/nacayu/SOAR-Shanghaijiankangyun-OCR-Automatic-Recognization-) | ⭐ 33<!-- end --> | 🔱 22<!-- end --> | 上海健康云图片OCR识别 |
+| [ImageSetToRosbag](https://github.com/nacayu/ImageSetToRosbag) | ⭐ 11<!-- end --> | 🔱 00<!-- end --> | 图像集转ROSbag |
 
 </div>
 
@@ -178,9 +179,9 @@
 - 🔬 3D Object Detection & Semantic Segmentation
 - 🎯 Freespace Detection & Object Tracking
 
-**📊 Public Repositories:** 18
+**📊 Public Repositories:** 1818<!-- end -->
 
-**🌟 Total Stars Earned:** 205+
+**🌟 Total Stars Earned:** 191205+<!-- end -->
 
 </div>
 
@@ -212,5 +213,5 @@
 ---
 
 <p align="center">
-  <sub>Last Updated: 2026-04-01</sub>
+  <sub>Last Updated: 2026-04-012026-04-01<!-- end --></sub>
 </p>
