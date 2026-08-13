@@ -28,10 +28,24 @@ def github_get(path: str):
 def get_github_stats():
     """Return the values used by the generated README."""
     user = github_get(f"/users/{USERNAME}")
+    repos = []
+    for page in range(1, 4):
+        batch = github_get(f"/users/{USERNAME}/repos?per_page=100&page={page}")
+        repos.extend(batch)
+        if len(batch) < 100:
+            break
+
+    repo_map = {repo["name"]: repo for repo in repos}
     return {
         "followers": user.get("followers", 0),
         "following": user.get("following", 0),
         "repos": user.get("public_repos", 0),
+        "stars": sum(repo.get("stargazers_count", 0) for repo in repos),
+        "forks": sum(repo.get("forks_count", 0) for repo in repos),
+        "radar_stars": repo_map.get("awesome-deeplearning-based-radar-perception", {}).get("stargazers_count", 0),
+        "website_stars": repo_map.get("nacayu.github.io", {}).get("stargazers_count", 0),
+        "crfnet_stars": repo_map.get("CRFNet_Tensorflow2.4.1", {}).get("stargazers_count", 0),
+        "saf_fcos_stars": repo_map.get("SAF-FCOS", {}).get("stargazers_count", 0),
         "update_date": date.today().isoformat(),
     }
 
@@ -39,7 +53,8 @@ def get_github_stats():
 def generate_readme():
     stats = get_github_stats()
     content = TEMPLATE.read_text(encoding="utf-8")
-    content = content.replace("{{ update_date }}", stats["update_date"])
+    for key, value in stats.items():
+        content = content.replace("{{ " + key + " }}", str(value))
     OUTPUT.write_text(content, encoding="utf-8")
     print(f"Updated {OUTPUT.name}: {stats['repos']} public repositories")
 
