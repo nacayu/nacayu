@@ -4,6 +4,8 @@ from datetime import date
 import json
 import os
 from pathlib import Path
+import re
+import time
 import urllib.error
 import urllib.request
 
@@ -12,6 +14,7 @@ USERNAME = "nacayu"
 ROOT = Path(__file__).resolve().parent
 TEMPLATE = ROOT / "README.template.md"
 OUTPUT = ROOT / "README.md"
+CACHE_BUSTER = str(time.time_ns())
 
 
 def github_get(path: str):
@@ -20,7 +23,9 @@ def github_get(path: str):
     token = os.environ.get("GITHUB_TOKEN")
     if token:
         headers["Authorization"] = f"Bearer {token}"
-    request = urllib.request.Request(f"https://api.github.com{path}", headers=headers)
+    separator = "&" if "?" in path else "?"
+    url = f"https://api.github.com{path}{separator}_={CACHE_BUSTER}"
+    request = urllib.request.Request(url, headers=headers)
     with urllib.request.urlopen(request, timeout=20) as response:
         return json.loads(response.read().decode("utf-8"))
 
@@ -29,7 +34,7 @@ def get_github_stats():
     """Return the values used by the generated README."""
     user = github_get(f"/users/{USERNAME}")
     repos = []
-    for page in range(1, 4):
+    for page in range(1, 11):
         batch = github_get(f"/users/{USERNAME}/repos?per_page=100&page={page}")
         repos.extend(batch)
         if len(batch) < 100:
@@ -55,6 +60,9 @@ def generate_readme():
     content = TEMPLATE.read_text(encoding="utf-8")
     for key, value in stats.items():
         content = content.replace("{{ " + key + " }}", str(value))
+    unresolved = sorted(set(re.findall(r"{{\s*[^}]+\s*}}", content)))
+    if unresolved:
+        raise ValueError(f"Unresolved template variables: {', '.join(unresolved)}")
     OUTPUT.write_text(content, encoding="utf-8")
     print(f"Updated {OUTPUT.name}: {stats['repos']} public repositories")
 
