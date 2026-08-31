@@ -21,7 +21,7 @@ Researcher and engineer building perception systems for autonomous driving.
   <img src="https://img.shields.io/badge/Forks%20across%20repos-34-7c3aed?style=for-the-badge" alt="Forks across public repositories">
 </p>
 
-<sub>Verified from the GitHub API on 2026-08-28. Star and fork totals cover all public repositories returned by GitHub.</sub>
+<sub>Verified from the GitHub API on 2026-08-31. Star and fork totals cover all public repositories returned by GitHub.</sub>
 
 ---
 
