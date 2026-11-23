@@ -15,13 +15,13 @@ Researcher and engineer building perception systems for autonomous driving.
 
 <p>
   <img src="https://img.shields.io/badge/Followers-58-2563eb?style=for-the-badge" alt="Followers">
-  <img src="https://img.shields.io/badge/Following-72-0891b2?style=for-the-badge" alt="Following">
+  <img src="https://img.shields.io/badge/Following-73-0891b2?style=for-the-badge" alt="Following">
   <img src="https://img.shields.io/badge/Public%20Repos-20-0f766e?style=for-the-badge" alt="Public repositories">
   <img src="https://img.shields.io/badge/Stars%20across%20repos-197-d97706?style=for-the-badge&logo=github" alt="Stars across public repositories">
   <img src="https://img.shields.io/badge/Forks%20across%20repos-33-7c3aed?style=for-the-badge" alt="Forks across public repositories">
 </p>
 
-<sub>Verified from the GitHub API on 2026-11-16. Star and fork totals cover all public repositories returned by GitHub.</sub>
+<sub>Verified from the GitHub API on 2026-11-23. Star and fork totals cover all public repositories returned by GitHub.</sub>
 
 ---
 
